@@ -116,6 +116,8 @@ def game(stage_dict):
     #end the game if the level index is out of range
     if stage_idx == 5:
         print("You made it to the end with " + str(current_lives) + " lives! Congratulations! \n")
+        stage_idx = 0
+        current_lives = 3   
         play() 
     else:
         if current_lives == 0:
